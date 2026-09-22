@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Privacy Policy — Skill Videos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; scrollbar-gutter: stable; }
+  body { margin: 0; background: #1D2123; color: #F4F4F2; font-family: Archivo, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  ::selection { background: #3D5AFE; color: #fff; }
+  a { color: #8098FF; text-decoration: none; }
+  a:hover { color: #F4F4F2; }
+  strong { color: #F4F4F2; font-weight: 600; }
+  .cue { opacity: 0; transform: translate3d(0,30px,0); transition: opacity .85s cubic-bezier(.16,1,.3,1), transform .85s cubic-bezier(.16,1,.3,1); }
+  .cue.on { opacity: 1; transform: none; }
+  nav.pside.cue { transform: none; }
+  .rule { height: 1px; background: rgba(244,244,242,.22); transform: scaleX(0); transform-origin: left; transition: transform .9s cubic-bezier(.16,1,.3,1) .15s; }
+  .cue.on .rule { transform: scaleX(1); }
+  .mfw { color: transparent; -webkit-text-stroke: 1px #F4F4F2; background: linear-gradient(#F4F4F2 0 0) no-repeat; -webkit-background-clip: text; background-clip: text; background-size: 100% 0; background-position: 0 100%; animation: pfill 1.6s cubic-bezier(.16,1,.3,1) .4s forwards; }
+  @keyframes pfill { to { background-size: 100% 100%; } }
+  .pnav { position: relative; display: flex; align-items: center; gap: 14px; padding: 10px 12px 10px 0; overflow: hidden; color: #CBD0D8; border-top: 1px solid rgba(244,244,242,.1); transition: color .3s, padding-left .45s cubic-bezier(.16,1,.3,1); }
+  .pnav:last-of-type { border-bottom: 1px solid rgba(244,244,242,.1); }
+  .pnav .pfill { position: absolute; inset: 0; background: #3D5AFE; transform: scaleX(0); transform-origin: left; transition: transform .5s cubic-bezier(.16,1,.3,1); z-index: 0; }
+  .pnav > span { position: relative; z-index: 1; }
+  .pnav .pnum { font-family: JetBrains Mono, monospace; font-size: 10px; letter-spacing: .1em; color: #8098FF; transition: color .3s; }
+  .pnav:hover, .pnav[data-on="1"] { color: #F4F4F2; padding-left: 14px; }
+  .pnav:hover .pfill { transform: scaleX(1); }
+  .pnav:hover .pnum { color: #F4F4F2; }
+  .pnav[data-on="1"] .pnum { color: #F4F4F2; }
+  .pnav[data-on="1"]::before { content: ""; position: absolute; left: 0; top: 50%; width: 5px; height: 5px; background: #3D5AFE; transform: translateY(-50%); z-index: 1; }
+  .psec { position: relative; }
+  .psec .snum { transition: color .35s, transform .5s cubic-bezier(.16,1,.3,1); display: inline-block; }
+  .psec:hover .snum { color: #F4F4F2; transform: translateX(6px); }
+  .psec .sglow { position: absolute; left: -12%; top: -10%; width: 60%; height: 120%; pointer-events: none; opacity: 0; filter: blur(60px); background: radial-gradient(50% 50% at 50% 50%, rgba(61,90,254,.22) 0%, rgba(61,90,254,0) 70%); transition: opacity .8s ease; z-index: 0; }
+  .psec:hover .sglow { opacity: 1; }
+  .pli { position: relative; padding-left: 22px; }
+  .pli::before { content: ""; position: absolute; left: 0; top: .72em; width: 6px; height: 1px; background: #8098FF; transition: width .35s cubic-bezier(.16,1,.3,1), background .3s; }
+  .pli:hover::before { width: 12px; background: #F4F4F2; }
+  .sliced { position: relative; display: inline-block; }
+  .sliced [data-sl] { position: absolute; left: 0; right: 0; top: 0; transition: clip-path .18s ease, transform .18s ease, opacity .18s ease; }
+  .sliced [data-sl="top"] { clip-path: inset(0 0 50% 0); transform: translateY(-2px); }
+  .sliced [data-sl="bot"] { clip-path: inset(50% 0 0 0); transform: translateY(2px); }
+  .sliced:hover [data-sl="top"] { clip-path: inset(0 0 0 0); transform: translateY(0); opacity: 0; }
+  .sliced:hover [data-sl="bot"] { clip-path: inset(0 0 0 0); transform: translateY(0); }
+  .pback:hover .pback-a { transform: translateX(-6px); }
+  .pback-a { display: inline-block; transition: transform .4s cubic-bezier(.16,1,.3,1); }
+  .pmail:hover .pmail-a { transform: translateX(8px); }
+  .pmail-a { display: inline-block; transition: transform .4s cubic-bezier(.16,1,.3,1); }
+  @keyframes pping { 0% { transform: scale(1); opacity: .6; } 70%, 100% { transform: scale(1.8); opacity: 0; } }
+  @media (max-width: 900px) { .pgrid { grid-template-columns: 1fr !important; } .pside { position: static !important; } }
+  @media (prefers-reduced-motion: reduce) { .cue { opacity: 1; transform: none; } .mfw { animation: none; color: #F4F4F2; -webkit-text-stroke: 0; } .rule { transform: none; } }
+</style>
+</helmet>
+
+<div id="pprog" style="position:fixed;left:0;top:0;height:2px;width:100%;zIndex:50;transformOrigin:left;transform:scaleX(0);background:linear-gradient(90deg,#3D5AFE,#8098FF);pointerEvents:none"></div>
+
+<div style="position:relative;minHeight:100vh;background:#1D2123">
+  <div aria-hidden="true" style="position:absolute;inset:0;overflow:hidden;pointerEvents:none;zIndex:0">
+  <span aria-hidden="true" style="position:absolute;left:-10%;top:-10%;width:60%;height:60%;pointerEvents:none;filter:blur(70px);background:radial-gradient(50% 50% at 50% 50%,rgba(61,90,254,.22) 0%,rgba(61,90,254,0) 70%)"></span>
+  <span aria-hidden="true" style="position:absolute;right:-15%;top:30%;width:50%;height:50%;pointerEvents:none;filter:blur(90px);background:radial-gradient(50% 50% at 50% 50%,rgba(61,90,254,.1) 0%,rgba(61,90,254,0) 70%)"></span>
+  <span aria-hidden="true" style="position:absolute;inset:0;pointerEvents:none;opacity:.35;backgroundImage:linear-gradient(rgba(244,244,242,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(244,244,242,.05) 1px,transparent 1px);backgroundSize:120px 120px;maskImage:radial-gradient(60% 50% at 50% 0%,#000 0%,transparent 100%);WebkitMaskImage:radial-gradient(60% 50% at 50% 0%,#000 0%,transparent 100%)"></span>
+  </div>
+
+  <div style="position:relative;zIndex:1;padding:clamp(20px,2.4vh,34px) clamp(20px,3.2vw,64px) 0">
+
+    <div style="display:flex;alignItems:center;justifyContent:space-between;gap:20px">
+      <a class="pback" href="./index.html" style="display:flex;alignItems:center;gap:12px;fontFamily:JetBrains Mono,monospace;fontSize:10px;letterSpacing:.16em;textTransform:uppercase;color:#CBD0D8"><span class="pback-a">&#8592;</span>Back to Skill Videos</a>
+      <a href="./index.html" style="display:flex;alignItems:center;gap:12px">
+        <img src="./assets/sv-wordmark-white.png" alt="Skill Videos" style="width:clamp(56px,4.2vw,76px);height:auto;display:block" />
+        <span style="width:1px;height:28px;background:rgba(244,244,242,.18)"></span>
+        <span style="display:flex;alignItems:center;gap:9px;fontFamily:JetBrains Mono,monospace;fontSize:10px;letterSpacing:.16em;textTransform:uppercase;color:#CBD0D8"><span style="position:relative;width:6px;height:6px;background:#3D5AFE"><span style="position:absolute;inset:0;background:#3D5AFE;animation:pping 1.9s ease-out infinite"></span></span>Legal</span>
+      </a>
+    </div>
+
+    <div style="maxWidth:1400px;margin:0 auto;paddingTop:clamp(64px,12vh,140px)">
+      <h1 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(64px,11vw,190px);lineHeight:.86;letterSpacing:-.03em;display:flex;flexDirection:column">
+        <span class="mfw">Privacy</span>
+        <span class="mfw" style="animationDelay:.75s;paddingLeft:clamp(40px,10vw,200px)">Policy</span>
+      </h1>
+      <p class="cue" style="margin:clamp(28px,4vh,44px) 0 0;maxWidth:62ch;fontSize:clamp(17px,1.45vw,22px);lineHeight:1.5;color:#DCE0E6;textWrap:pretty">Skill Videos handles raw footage, rough cuts, campaign films and brand material every day, most of it belonging to someone else. This policy sets out plainly what personal information we collect through this website and our services, why we hold it, and what you can ask us to do with it.</p>
+
+      <div class="cue" style="marginTop:clamp(44px,7vh,80px)">
+        <div class="rule"></div>
+        <div style="display:grid;gridTemplateColumns:repeat(auto-fit,minmax(200px,1fr));gap:24px 34px;padding:24px 0">
+          <div style="display:flex;flexDirection:column;gap:9px">
+            <span style="fontFamily:JetBrains Mono,monospace;fontSize:9px;letterSpacing:.22em;textTransform:uppercase;color:#C2C8D1">Effective</span>
+            <span style="fontSize:16px;color:#F4F4F2;fontVariantNumeric:tabular-nums">22 Sep 2026</span>
+          </div>
+          <div style="display:flex;flexDirection:column;gap:9px">
+            <span style="fontFamily:JetBrains Mono,monospace;fontSize:9px;letterSpacing:.22em;textTransform:uppercase;color:#C2C8D1">Data controller</span>
+            <span style="fontSize:16px;color:#F4F4F2">Skill Service LTD.</span>
+          </div>
+          <div style="display:flex;flexDirection:column;gap:9px">
+            <span style="fontFamily:JetBrains Mono,monospace;fontSize:9px;letterSpacing:.22em;textTransform:uppercase;color:#C2C8D1">Privacy contact</span>
+            <a class="pmail" href="mailto:support@skill.ventures" style="display:flex;alignItems:center;gap:10px;fontSize:16px;color:#F4F4F2"><span>support@skill.ventures</span><span class="pmail-a" style="color:#8098FF">&#8594;</span></a>
+          </div>
+        </div>
+        <div class="rule"></div>
+      </div>
+
+      <div class="pgrid" style="display:grid;gridTemplateColumns:minmax(0,280px) minmax(0,1fr);gap:clamp(32px,6vw,120px);marginTop:clamp(48px,8vh,96px);alignItems:start">
+
+        <nav class="pside cue" style="position:sticky;top:34px;display:flex;flexDirection:column;alignSelf:start;maxHeight:calc(100vh - 68px);overflowY:auto">
+          <div style="display:flex;alignItems:center;gap:12px;marginBottom:16px;fontFamily:JetBrains Mono,monospace;fontSize:9px;letterSpacing:.22em;textTransform:uppercase;color:#C2C8D1"><span>Contents</span><span class="rule" style="flex:1"></span></div>
+          <sc-for list="{{ toc }}" as="t" hint-placeholder-count="11">
+            <a class="pnav" href="{{ t.href }}" data-on="{{ t.on }}" style="fontSize:14px"><span class="pfill"></span><span class="pnum">{{ t.num }}</span><span>{{ t.label }}</span></a>
+          </sc-for>
+          <div style="marginTop:28px;display:flex;flexDirection:column;gap:6px;fontFamily:JetBrains Mono,monospace;fontSize:10px;letterSpacing:.12em;textTransform:uppercase;color:#8A9099">
+            <span>Reading</span>
+            <span style="fontSize:22px;letterSpacing:0;color:#F4F4F2;fontVariantNumeric:tabular-nums">{{ pct }}<span style="fontSize:12px;color:#8098FF">%</span></span>
+          </div>
+        </nav>
+
+        <div style="display:flex;flexDirection:column;gap:clamp(48px,7vh,88px);fontSize:16px;lineHeight:1.68;color:#D6DAE1;maxWidth:70ch;textWrap:pretty">
+
+          <section id="who-we-are" class="psec cue" data-sec="1" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">01</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">Who we are</h2>
+            <p style="margin:0">Skill Videos is the video production and post-production brand of <strong>Skill Service LTD.</strong>, a company registered in Bangladesh with its head office in Dhaka and a member of Skill Ventures. Throughout this policy, "we", "us" and "our" refer to Skill Service LTD., which is the party responsible for the personal information described here.</p>
+            <p style="margin:0">This policy explains what we collect when you visit this website, contact us, request a free test cut, book a meeting, or work with us as a client, how that information is used and protected, and the choices you have over it.</p>
+          </section>
+
+          <section id="information-we-collect" class="psec cue" data-sec="2" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">02</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">What personal information we collect</h2>
+            <p style="margin:0">We only collect information that we need in order to answer an enquiry, deliver production work, or keep the website running. Depending on how you interact with us, this may include:</p>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>Contact and enquiry details</strong> — your name, email address, phone number, company name, and the content of the message you send through our forms, by email, or when booking a discovery call.</p>
+              <p class="pli" style="margin:0"><strong>Test cut requests</strong> — the details you give us about your footage, platform and goal, and any clip or download link you share so we can cut a sample.</p>
+              <p class="pli" style="margin:0"><strong>Project material</strong> — briefs, raw footage, audio, scripts, graphics, brand assets, reference links, review comments and other files you or your team upload or send to us so that we can carry out the work.</p>
+              <p class="pli" style="margin:0"><strong>People who appear in footage</strong> — faces, voices and likenesses of presenters, actors, staff or customers contained in the material you send us. We process this only to produce the work you have commissioned.</p>
+              <p class="pli" style="margin:0"><strong>Billing details</strong> — company billing name and address, invoice records and payment references. Card details are entered directly with our payment processor and are never stored on our systems.</p>
+              <p class="pli" style="margin:0"><strong>Technical and usage data</strong> — IP address, browser and device type, pages viewed, referring page and approximate location, collected through analytics cookies and embedded video players.</p>
+            </div>
+            <p style="margin:0">We do not ask for special categories of data (such as health, political or biometric information), and we do not knowingly collect information from children.</p>
+          </section>
+
+          <section id="how-we-use-it" class="psec cue" data-sec="3" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">03</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">How we use your information</h2>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>To respond to you</strong> — replying to enquiries, test cut requests, emails and booked meetings.</p>
+              <p class="pli" style="margin:0"><strong>To deliver the work</strong> — editing, grading, sound, motion design, AI-assisted creation, review rounds, format versioning and final delivery, and communicating with your team during a project.</p>
+              <p class="pli" style="margin:0"><strong>To run our business</strong> — quoting, invoicing, taking payment, keeping accounting records and enforcing contracts.</p>
+              <p class="pli" style="margin:0"><strong>To improve the website</strong> — understanding which pages and work samples people find useful, and fixing problems.</p>
+              <p class="pli" style="margin:0"><strong>To show our work</strong> — only where you have agreed in writing, featuring finished projects in our showreel, on this site, or on our Vimeo channel. You can withdraw this permission at any time.</p>
+            </div>
+            <p style="margin:0;padding:18px 22px;border:1px solid rgba(128,152,255,.35);background:rgba(61,90,254,.08);color:#F4F4F2">We do not sell your personal information, and we do not use client footage or deliverables to train third-party AI models.</p>
+          </section>
+
+          <section id="your-footage" class="psec cue" data-sec="4" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">04</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">Your footage and deliverables</h2>
+            <p style="margin:0">Footage and finished films are treated as confidential client material, separate from ordinary personal data:</p>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>Ownership</strong> — you keep all rights in the material you send us and in the finished deliverables once paid for. We claim no ownership in either.</p>
+              <p class="pli" style="margin:0"><strong>Use</strong> — we open, edit and store your material only to carry out the work you have commissioned. We do not publish, share or repurpose it without written permission.</p>
+              <p class="pli" style="margin:0"><strong>Unreleased content</strong> — embargoed, pre-launch or under-NDA projects are handled on restricted access and are never shown in our reel or portfolio until you have released them publicly and approved their use.</p>
+              <p class="pli" style="margin:0"><strong>AI tools</strong> — where a project uses AI-assisted generation or enhancement, your footage is processed only to produce your deliverable. We select tools that do not retain client material for model training, and we will tell you which tools are used on request.</p>
+              <p class="pli" style="margin:0"><strong>People in your footage</strong> — obtaining consent or release from anyone who appears in the material you supply is your responsibility as the party who filmed or owns it.</p>
+              <p class="pli" style="margin:0"><strong>Deletion</strong> — you can ask us to delete project files at any time after final delivery, and we will confirm when it is done.</p>
+            </div>
+          </section>
+
+          <section id="legal-basis" class="psec cue" data-sec="5" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">05</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">Our basis for processing</h2>
+            <p style="margin:0">We process personal information only where we have a proper reason to do so:</p>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>Performance of a contract</strong> — where the information is needed to quote for, carry out or invoice production work, including a free test cut.</p>
+              <p class="pli" style="margin:0"><strong>Consent</strong> — for featuring your project in our portfolio, and for analytics cookies where consent is required. You can withdraw consent at any time.</p>
+              <p class="pli" style="margin:0"><strong>Legitimate interests</strong> — to answer enquiries, secure our systems, and understand how the website is used, balanced against your privacy.</p>
+              <p class="pli" style="margin:0"><strong>Legal obligation</strong> — to keep tax, accounting and company records for the periods the law requires.</p>
+            </div>
+          </section>
+
+          <section id="cookies" class="psec cue" data-sec="6" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">06</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">Cookies, embeds and tracking</h2>
+            <p style="margin:0">The site uses a small number of cookies and similar technologies:</p>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>Essential</strong> — needed for the site, forms and meeting booking to function. These cannot be switched off.</p>
+              <p class="pli" style="margin:0"><strong>Analytics</strong> — Google Analytics or an equivalent tool, used in aggregate to measure traffic and page performance.</p>
+              <p class="pli" style="margin:0"><strong>Embedded video</strong> — work samples on this site are streamed from Vimeo. When a player loads, Vimeo may set its own cookies and receive your IP address and playback data under <a href="https://vimeo.com/privacy" target="_blank" rel="noopener">Vimeo's privacy policy</a>. Videos hosted directly on this site do not send data to third parties.</p>
+              <p class="pli" style="margin:0"><strong>Scheduling</strong> — the discovery call booking tool is provided by a third-party scheduling service, which processes the details you enter under its own policy.</p>
+            </div>
+            <p style="margin:0">You can refuse or delete cookies through your browser settings, and opt out of analytics cookies where a consent banner is shown. Blocking essential cookies may stop parts of the site from working.</p>
+          </section>
+
+          <section id="sharing" class="psec cue" data-sec="7" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">07</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">Whether we share your data</h2>
+            <p style="margin:0">We do not sell, rent or trade personal information. We share it only with service providers who help us operate, and only to the extent they need it:</p>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>Hosting and file transfer</strong> — the platforms that host the website, receive your uploads and store project files during a job.</p>
+              <p class="pli" style="margin:0"><strong>Review and delivery</strong> — the tools we use to share cuts for review and deliver finished files, including Vimeo for private review links where you agree to it.</p>
+              <p class="pli" style="margin:0"><strong>Analytics</strong> — Google, for the purposes described above.</p>
+              <p class="pli" style="margin:0"><strong>Email and scheduling</strong> — the tools we use to send mail and meeting invitations.</p>
+              <p class="pli" style="margin:0"><strong>Payments</strong> — our payment processor and bank, for invoicing and settlement.</p>
+              <p class="pli" style="margin:0"><strong>Freelance specialists</strong> — occasionally a colorist, sound designer or animator outside our core team, working under a confidentiality agreement and only with the material needed for their part.</p>
+              <p class="pli" style="margin:0"><strong>Professional advisers and authorities</strong> — accountants, auditors or regulators, where we are required to disclose information by law.</p>
+            </div>
+            <p style="margin:0">These providers act on our instructions under written terms, and some operate in other countries, including outside Bangladesh. Where information is transferred abroad we take reasonable steps to ensure it remains protected to the standard described in this policy.</p>
+          </section>
+
+          <section id="security" class="psec cue" data-sec="8" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">08</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">How your data is stored and protected</h2>
+            <p style="margin:0">Client footage, project files and business records are held on access-controlled cloud infrastructure and company systems. Our safeguards include encryption in transit (HTTPS) and at rest with our hosting providers, accounts limited to the staff who need them, multi-factor authentication on administrative tools, regular backups, password-protected review links, and confidentiality obligations for every employee, contractor and freelancer. Where a client requires it, we work under a signed non-disclosure agreement.</p>
+            <p style="margin:0">No method of transmission or storage is completely secure. If a breach affects your personal information or unreleased material we will investigate it, take steps to contain it, and notify you and the relevant authority where we are required to do so.</p>
+          </section>
+
+          <section id="retention" class="psec cue" data-sec="9" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">09</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">How long we keep your data</h2>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>Enquiries that do not become projects</strong> — up to 24 months from your last contact with us.</p>
+              <p class="pli" style="margin:0"><strong>Test cut footage</strong> — deleted within 30 days of sending you the sample, unless the project goes ahead.</p>
+              <p class="pli" style="margin:0"><strong>Client footage, project files and deliverables</strong> — for the duration of the engagement and up to 6 months after final delivery, unless you ask us to remove them sooner or your contract sets a different period.</p>
+              <p class="pli" style="margin:0"><strong>Contracts, invoices and accounting records</strong> — for as long as tax and company law requires, normally at least 6 years.</p>
+              <p class="pli" style="margin:0"><strong>Portfolio use</strong> — until you withdraw permission.</p>
+              <p class="pli" style="margin:0"><strong>Analytics data</strong> — in aggregated or pseudonymised form, according to the retention settings of the tool, normally no more than 26 months.</p>
+            </div>
+            <p style="margin:0">When a retention period ends, information is deleted or irreversibly anonymised.</p>
+          </section>
+
+          <section id="your-rights" class="psec cue" data-sec="10" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">10</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">Your privacy rights</h2>
+            <p style="margin:0">You can ask us at any time to:</p>
+            <div style="display:flex;flexDirection:column;gap:12px">
+              <p class="pli" style="margin:0"><strong>Access</strong> a copy of the personal information we hold about you.</p>
+              <p class="pli" style="margin:0"><strong>Correct</strong> information that is inaccurate or incomplete.</p>
+              <p class="pli" style="margin:0"><strong>Delete</strong> information or footage we no longer have a reason to keep.</p>
+              <p class="pli" style="margin:0"><strong>Restrict or object</strong> to a particular use of your information, including portfolio use of your project.</p>
+              <p class="pli" style="margin:0"><strong>Withdraw consent</strong> you previously gave, for example to non-essential cookies.</p>
+              <p class="pli" style="margin:0"><strong>Receive your data</strong> in a portable, machine-readable format, or have it sent to another provider.</p>
+            </div>
+            <p style="margin:0">Email <a href="mailto:support@skill.ventures">support@skill.ventures</a> with your request. We may ask you to confirm your identity, and we will respond within 30 days. Making a request is free and will never affect the service you receive from us.</p>
+          </section>
+
+          <section id="changes" class="psec cue" data-sec="11" style="display:flex;flexDirection:column;gap:18px">
+            <span class="sglow" aria-hidden="true"></span>
+            <div class="rule"></div>
+            <span class="snum" style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.15em;color:#8098FF;paddingTop:10px">11</span>
+            <h2 style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(28px,2.8vw,44px);lineHeight:.95;letterSpacing:-.02em;color:#F4F4F2">Changes and how to reach us</h2>
+            <p style="margin:0">We may update this policy as our services, tools or legal obligations change. The effective date at the top of the page always shows the current version, and material changes will be announced on this page. We encourage you to review it from time to time.</p>
+          </section>
+
+        </div>
+      </div>
+
+      <div class="cue" style="marginTop:clamp(72px,12vh,140px);position:relative;overflow:hidden;padding:clamp(40px,6vh,72px) 0;borderTop:1px solid rgba(244,244,242,.14)">
+        <span aria-hidden="true" style="position:absolute;left:30%;top:-40%;width:50%;height:140%;pointerEvents:none;filter:blur(70px);background:radial-gradient(50% 50% at 50% 50%,rgba(61,90,254,.2) 0%,rgba(61,90,254,0) 70%)"></span>
+        <div style="position:relative;display:grid;gridTemplateColumns:repeat(auto-fit,minmax(280px,1fr));gap:40px;alignItems:end">
+          <div style="display:flex;flexDirection:column;gap:14px">
+            <span style="fontFamily:JetBrains Mono,monospace;fontSize:9px;letterSpacing:.22em;textTransform:uppercase;color:#C2C8D1">Privacy contact</span>
+            <p style="margin:0;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(30px,3.6vw,56px);lineHeight:.92;letterSpacing:-.025em;color:#F4F4F2">Questions about<br />your data?</p>
+          </div>
+          <div style="display:flex;flexDirection:column;gap:10px;fontSize:15px;lineHeight:1.6;color:#D6DAE1">
+            <strong>Skill Service LTD. — Skill Videos</strong>
+            <span>H 112, Road 06, Mohakhali DOHS, Dhaka, Bangladesh</span>
+            <a class="pmail" href="mailto:support@skill.ventures" style="display:flex;alignItems:center;gap:12px;marginTop:8px;fontStretch:76%;fontWeight:900;textTransform:uppercase;fontSize:clamp(20px,2vw,30px);lineHeight:1;color:#F4F4F2"><span class="sliced"><span aria-hidden="true">support@skill.ventures</span><span data-sl="top" style="color:#8098FF">support@skill.ventures</span><span data-sl="bot" style="color:#8098FF">support@skill.ventures</span></span><span class="pmail-a" style="color:#8098FF">&#8594;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;alignItems:center;justifyContent:space-between;gap:20px;flexWrap:wrap;padding:28px 0 40px;borderTop:1px solid rgba(244,244,242,.1)">
+      <span style="display:flex;alignItems:center;gap:18px;fontFamily:JetBrains Mono,monospace;fontSize:11px;color:#CFD4DB"><span>&#169; 2026 Skill Videos</span><a href="./index.html" style="color:#CFD4DB;borderBottom:1px solid rgba(207,212,219,.35)" style-hover="color:#F4F4F2;borderColor:#F4F4F2">Home</a></span>
+      <a href="https://skill.ventures/" target="_blank" rel="noopener" style="display:flex;alignItems:center;gap:9px;opacity:.8;transition:opacity .3s" style-hover="opacity:1">
+        <img src="./assets/skill-ventures-mark-white.png" alt="Skill Ventures" style="height:22px;width:auto;display:block" />
+        <span style="fontFamily:JetBrains Mono,monospace;fontSize:11px;letterSpacing:.14em;textTransform:uppercase;color:#D6DAE1">Member of Skill Ventures</span>
+      </a>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { active: 0, pct: 0 };
+  sections = [
+    ["who-we-are", "Who we are"], ["information-we-collect", "Information we collect"], ["how-we-use-it", "How we use it"],
+    ["your-footage", "Your footage & deliverables"], ["legal-basis", "Legal basis"], ["cookies", "Cookies, embeds & tracking"],
+    ["sharing", "Sharing with others"], ["security", "Storage & security"], ["retention", "How long we keep it"],
+    ["your-rights", "Your rights"], ["changes", "Changes & contact"]
+  ];
+  componentDidMount() {
+    this.io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); }), { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".cue").forEach(el => this.io.observe(el));
+    this.onScroll = () => {
+      const h = document.documentElement, max = h.scrollHeight - h.innerHeight || 1;
+      const pct = Math.min(100, Math.max(0, Math.round(h.scrollTop / (h.scrollHeight - window.innerHeight) * 100)));
+      const prog = document.getElementById("pprog"); if (prog) prog.style.transform = "scaleX(" + pct / 100 + ")";
+      let active = 0; const mid = window.innerHeight * 0.35;
+      this.sections.forEach(([id], i) => { const el = document.getElementById(id); if (el && el.getBoundingClientRect().top <= mid) active = i; });
+      if (active !== this.state.active || pct !== this.state.pct) this.setState({ active, pct });
+    };
+    window.addEventListener("scroll", this.onScroll, { passive: true });
+    this.onScroll();
+  }
+  componentWillUnmount() { window.removeEventListener("scroll", this.onScroll); if (this.io) this.io.disconnect(); }
+  renderVals() {
+    return {
+      pct: this.state.pct,
+      toc: this.sections.map(([id, label], i) => ({ href: "#" + id, label, num: String(i + 1).padStart(2, "0"), on: i === this.state.active ? "1" : "0" }))
+    };
+  }
+}
+</script>
+</body>
+</html>
